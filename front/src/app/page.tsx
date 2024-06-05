@@ -24,7 +24,7 @@ export default function Home() {
           <Button as="a" variant="success">
             Comprar
           </Button>
-        </Stack>;
+        </Stack>
       </div>
 
       </div>
