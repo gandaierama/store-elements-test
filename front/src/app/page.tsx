@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 // or less ideally
-import { Button, Stack, Container } from 'react-bootstrap';
+import { Button, Stack, Container, Row, Col, Card } from 'react-bootstrap';
 
 
 export default function Home() {
@@ -12,15 +12,34 @@ export default function Home() {
 
 
       <Container>
+        <Row>
+          <Col>
+            <Button as="a" variant="primary">
+              Detalhes
+            </Button>
+          </Col>
+          <Col>
+            <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
         
-        <Stack direction="horizontal" gap={2}>
-          <Button as="a" variant="primary">
-            Detalhes
-          </Button>
-          <Button as="a" variant="success">
-            Comprar
-          </Button>
-        </Stack>
+        <Card.Text>
+          Titulo grande com muitas linhas para testar o tamanho certo 
+        </Card.Text>
+        <Row>
+          <Col>
+              <Button variant="primary">Detalhes</Button>    
+          </Col>
+          <Col>
+              <Button variant="success">Comprar</Button>    
+          </Col>
+        </Row>
+        
+      </Card.Body>
+    </Card>
+          </Col>
+        </Row>
+
 
  
 
